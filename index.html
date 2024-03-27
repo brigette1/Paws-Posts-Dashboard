@@ -45,11 +45,13 @@
 
     <div class="right">
         <div class="toolbar">
-            <div class="top">
+            <div class="topnav">
                 <img src="search.png" class="search-img"/>
-                <span class="profile"><img src="yuri.png" alt="profile picture" class="corner-prof-pic">Yuri Cat</span>
+                <input type="text" placeholder="Search.." class="searchbar">
+                <img src="yuri.png" alt="profile picture" class="corner-prof-pic">
+                <span class="profile-name">Yuri Cat</span>
             </div>
-            <div class="bottom">
+            <div class="bottomnav">
                 <div class="intro">
                     <img src="yuri.png" alt="profile picture" class="intro-prof-pic
                     ">
@@ -63,91 +65,110 @@
                 </div>
             </div>
         </div>
-        <div class="posts">
-            <span class="your-posts">Your Posts</span>
-            <div class="all-posts">
-                <div class="post-one post">
-                    <img src="late-dinner.jpg" alt="cat disappointed with late dinner" class="user-image">
-                    Dinner was delayed by half a minute today...
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-                <div class="post-two post">
-                    <img src="why-vacuum.jpg" alt="cat disappointed that you're vacuuming" class="user-image">
-                    Why is human vacuuming? I worked hard to shed that fur.
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-                <div class="post-three post">
-                    <img src="gift.jpg" alt="cat is the gift" class="user-image">
-                    I am the gift.
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-                <div class="post-four post">
-                    <img src="dreaming.jpg" alt="cat dreaming" class="user-image">
-                    Dreaming of world domination...one nap at a time.
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-                <div class="post-five post">
-                    <img src="pov.jpg" alt="wake up hooman" class="user-image">
-                    POV it's 5:03am and I'm hungry.
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-                <div class="post-six post">
-                    <img src="plotting.jpg" alt="cat plotting" class="user-image">
-                    Plotting feathered conquests from the comfort of my bed.
-                    <button><img src="comments.png" class="comment-icon"></button>
-                    <button><img src="likes.png" class="likes-icon"></button>
-                </div>
-            </div>
-        </div>
-        <div class="announcements">
-            <div span="title-announcement">Announcements</span>
-            <div class="announcement-posts">
-                <div class="announcement-one">
-                    <span class="announcement-general">BREAKING NEWS</span>
-                    <span class="announcement">I have successfully caught and released a bug. You're welcome.</span>
-                </div>
-                <div class="announcement-two">
-                    <span class="announcement-general">URGENT MESSAGE</span>
-                    <span class="announcement">A stranger has entered the yard. Prepare for intense staring from the window.</span>
-                </div>
-                <div class="announcement-three">
-                    <span class="announcement-general">PUBLIC SERVICE ANNOUNCEMENT</span>
-                    <span class="announcement">The plant near the windowsill is not edible. I REPEAT, NOT EDIBLE.</span>
-                </div>
-            </div>
-        </div>
-        <div class="trending">
-            <div class="suggested-profile">
-                <img src="bunny.png" alt="bunny">
-                <div class="user">
-                    <span class="handle">@sir</span>
-                    <span class="user-name">Sir Hopsalot</span>
+        <div class="main">
+            <div class="left-main">
+                <div class="posts">
+                    <span class="your-posts">Your Posts</span>
+                    <div class="all-posts">
+                        <div class="post-one post">
+                            <img src="late-dinner.jpg" alt="cat disappointed with late dinner" class="user-image">
+                            <span class="caption">Dinner was delayed by half a minute today...</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                        <div class="post-two post">
+                            <img src="why-vacuum.jpg" alt="cat disappointed that you're vacuuming" class="user-image">
+                            <span class="caption">Why is human vacuuming? I worked hard to shed that fur.</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                        <div class="post-three post">
+                            <img src="gift.jpg" alt="cat is the gift" class="user-image">
+                            <span class="caption">I am the gift.</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                        <div class="post-four post">
+                            <img src="dreaming.jpg" alt="cat dreaming" class="user-image">
+                            <span class="caption">Dreaming of world domination...one nap at a time.</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                        <div class="post-five post">
+                            <img src="pov.jpg" alt="wake up hooman" class="user-image">
+                            <span class="caption">POV it's 5:03am and I'm hungry.</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                        <div class="post-six post">
+                            <img src="plotting.jpg" alt="cat plotting" class="user-image">
+                            <span class="caption">Plotting feathered conquests from the comfort of my bed.</span>
+                            <div class="interact">
+                                <button><img src="comments.png" class="comment-icon"></button>
+                                <button><img src="likes.png" class="likes-icon"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="suggested-profile">
-                <img src="cat.png" alt="cat">
-                <div class="user">
-                    <span class="handle">@callmechairman</span>
-                    <span class="user-name">Chairman Meow</span>
+            <div class="right-main">
+                <div class="announcements">
+                    <div class="title-announcement">Announcements</div>
+                    <div class="announcement-posts">
+                        <div class="announcement-one">
+                            <span class="announcement-general">BREAKING NEWS</span>
+                            <span class="announcement">I have successfully caught and released a bug. You're welcome.</span>
+                        </div>
+                        <div class="announcement-two">
+                            <span class="announcement-general">URGENT MESSAGE</span>
+                            <span class="announcement">A stranger has entered the yard. Prepare for intense staring from the window.</span>
+                        </div>
+                        <div class="announcement-three">
+                            <span class="announcement-general">PUBLIC SERVICE ANNOUNCEMENT</span>
+                            <span class="announcement">The plant near the windowsill is not edible. I REPEAT, NOT EDIBLE.</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="suggested-profile">
-                <img src="hedgehog.png" alt="hedgehog">
-                <div class="user">
-                    <span class="handle">@spikey</span>
-                    <span class="user-name">Spike Lee</span>
-                </div>
-            </div>
-            <div class="suggested-profile">
-                <img src="bird.png" alt="bird">
-                <div class="user">
-                    <span class="handle">@wingz</span>
-                    <span class="user-name">Wing Ding</span>
+                <div class="trending-title">Trending</div>
+                <div class="trending">
+                    <div class="suggested-profile">
+                        <img src="bunny.png" alt="bunny" class="suggested-pic">
+                        <div class="user">
+                            <span class="handle">@sir</span>
+                            <span class="user-name">Sir Hopsalot</span>
+                        </div>
+                    </div>
+                    <div class="suggested-profile">
+                        <img src="cat.png" alt="cat" class="suggested-pic">
+                        <div class="user">
+                            <span class="handle">@callmechairman</span>
+                            <span class="user-name">Chairman Meow</span>
+                        </div>
+                    </div>
+                    <div class="suggested-profile">
+                        <img src="hedgehog.png" alt="hedgehog" class="suggested-pic">
+                        <div class="user">
+                            <span class="handle">@spikey</span>
+                            <span class="user-name">Spike Lee</span>
+                        </div>
+                    </div>
+                    <div class="suggested-profile">
+                        <img src="bird.png" alt="bird" class="suggested-pic">
+                        <div class="user">
+                            <span class="handle">@wingz</span>
+                            <span class="user-name">Wing Ding</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
